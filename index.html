@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="corpo">
+        <div class="conteudo">
+            <form name="formulario" method="post" action="formulario.php">
+                    <p>
+                    <strong> O que você achou do site?</strong>
+                    <dl><dd>
+                        <input type="radio" name="avaliacao" value="muitobom" checked>Muito Bom
+                        <input type="radio" name="avaliacao" value="bom" >Bom
+                        <input type="radio" name="avaliacao" value="regular">Regular
+                        <input type="radio" name="avaliacao" value="umlixo">Um Lixo
+                    </dd></dl>
+                    </p>
+                    <p>
+                        <strong>Qual a seção que você mais gostou?</strong>
+                        <dl><dd>
+                        <select name="secao" size="1">
+                            <option value="emcartaz">Em cartaz</option>
+                            <option value="trilhasonora">Trilha Sonora</option>
+                            <option value="fotos">Galeria de Fotos</option>
+                            <option value="bilheteria">Bilheteria</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                        <!-- outra -->
+                        <input type="text" size="26" maxlength="256" name="outra">
+                        <dl><dd>
+                    </p>
+                    <p>
+                        <strong>Digite seus comentários no campo abaixo:</strong>
+                        <dl><dd>
+                        <textarea name="comentarios" rows="5" cols="42"></textarea>
+                        </dd></dl>
+                    </p>
+                    <p>
+                        <strong>Diga-nos como entrar em contato com você:</strong>
+                        <dl><dd>
+                        <pre>
+                        Nome    <input type="text" size="35" maxlength="256" name="nome">
+                        E-mail  <input type="text" size="35" maxlength="256" name="email">
+                        Fone    <input type="text" size="35" maxlength="256" name="fone">                        
+                        </pre>
+                        </dd></dl>
+                        <dl><dd>
+                        <input type="checkbox" name="novidades" value="nov">Quero receber as novidades do site por e-mail
+                        </dd></dl>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar Dados">
+                        <input type="reset" value="Limpar Formulário">
+                    </p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- TAG INPUT -->
+<!-- Name: nome do campo -->
+<!-- Value: valor padrão para o campo -->
+<!-- Size: tamanho do campo exibido na tela -->
+<!-- Maxlenght: informa o número máximo de caracteres do campo -->
+<!-- Type: tipo de entrada de dados => -->
+<!-- text: caixa de texto, podendo ser numérico ou alfanumérico -->
+<!-- password: senhas, texto aparece como "*" -->
+<!-- hidden: não aparece na tela, usado para passar informações aos programas que recebem dados -->
+<!-- select: lista de seleção ("drop-down") -->
+<!-- checkbox: caixa de seleção, que pode ser marcada ou desmarcada -->
+<!-- radio: uma opção entre várias -->
+<!-- textarea: caixa de texto com várias linhas -->
+<!-- file: envio de arquivos -->
+<!-- submit: envio de dados aos formulários -->
+<!-- image: mesma função de submit, mas uma imagem substitui o botão -->
+<!-- reset: limpa campos de um formulário e retorna ao valor padrão -->
+<!-- Placeholder: texto dentro da caixa que será exibido na tela -->
